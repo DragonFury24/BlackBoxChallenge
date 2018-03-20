@@ -8,14 +8,14 @@ public class Laser {
    public Laser(char station) {
       if (station >= 'a' && station <= 'j') {
          row = 1;
-         column = (int) (station - 'a') + 1;
+         column = (station - 'a') + 1;
          direction = DOWN;
       } else if (station >= 'A' && station <= 'J') {
          row = 10;
-         column = (int) (station - 'A') + 1;
+         column = (station - 'A') + 1;
          direction = UP;
       } else if (station >= 'k' && station <= 't') {
-         row = (int) (station - 'k') + 1;
+         row = (station - 'k') + 1;
          column = 1;
          direction = RIGHT;
       } else   //if(station>='K' && station<='T')
